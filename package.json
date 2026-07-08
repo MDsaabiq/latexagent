@@ -1,0 +1,17 @@
+{
+  "name": "tikzai",
+  "version": "1.0.0",
+  "description": "AI-Powered LaTeX TikZ Diagram Generator via IBM watsonx Orchestrate",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev":   "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["ibm", "watsonx", "latex", "tikz", "granite"],
+  "author": "Shaik Saabiq",
+  "license": "MIT",
+  "dependencies": {}
+}
