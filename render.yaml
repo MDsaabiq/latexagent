@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: tikzai
+    runtime: node
+    region: frankfurt
+    plan: free
+    buildCommand: echo "No build step needed"
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: IBM_API_KEY
+        sync: false
+      - key: WML_PROJECT_ID
+        sync: false
+      - key: WML_URL
+        value: https://eu-de.ml.cloud.ibm.com
+      - key: ORCHESTRATE_INSTANCE_ID
+        sync: false
+      - key: AGENT_ID
+        sync: false
+      - key: ORCHESTRATE_HOST
+        value: api.eu-de.watson-orchestrate.cloud.ibm.com
